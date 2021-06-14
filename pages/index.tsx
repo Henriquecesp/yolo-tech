@@ -1,7 +1,7 @@
 import Layout from 'layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import Hero from '../components/assets/Hero.svg'
+import Hero from 'components/assets/hero.svg'
 
 export const Home = (): JSX.Element => (
   <>
@@ -32,7 +32,7 @@ export const Home = (): JSX.Element => (
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Hero />
+            <img src={Hero} />
             <div>
               <p className="text-right m-8 leading-relaxed text-yellow-600">
                 Total de 285 conexões já realizadas ❤
