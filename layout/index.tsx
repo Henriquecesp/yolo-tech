@@ -10,7 +10,7 @@ interface LayoutProps {
 
 const Layout = ({ children, noHeader, title, description }: LayoutProps): JSX.Element => {
   return (
-    <div className="min-w-screen min-h-screen" style={{ backgroundColor: "#F0F0F7" }}>
+    <div className="min-w-screen" style={{ backgroundColor: "#F0F0F7", minHeight: "100vh" }}>
       <div className="text-gray-400 body-font overflow-hidden">
         {!noHeader && <Header title={title} description={description} />}
         <div className="container mx-auto">
