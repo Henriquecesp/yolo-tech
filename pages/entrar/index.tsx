@@ -59,6 +59,8 @@ const AccessAccount = (): JSX.Element => {
       localStorage.setItem('auth', data.token)
       toast.success('Sucesso')
       router.push('/cursos')
+    }).catch((e) => {
+      toast.error(e.response.data.message)
     })
   }
 
