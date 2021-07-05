@@ -83,6 +83,7 @@ const AccessAccount = (): JSX.Element => {
               />
               <Input
                 name="password"
+                type="password"
                 label="Senha"
                 register={register}
                 required

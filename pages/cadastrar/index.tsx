@@ -109,12 +109,14 @@ const CreateAccount = (): JSX.Element => {
               <Input
                 name="password"
                 label="Senha"
+                type="password"
                 register={register}
                 required
               />
               <Input
                 name="passwordConfirm"
                 label="Repetir senha"
+                type="password"
                 register={register}
               />
             </div>
