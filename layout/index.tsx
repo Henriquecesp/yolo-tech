@@ -10,12 +10,15 @@ interface LayoutProps {
 
 const Layout = ({ children, noHeader, title, description }: LayoutProps): JSX.Element => {
   return (
-    <div className="min-w-screen min-h-screen bg-blue-50">
+    <div className="min-w-screen min-h-screen bg-blue-500">
       <div className="text-gray-400 body-font overflow-hidden">
         {!noHeader && <Header title={title} description={description} />}
         <div className="container mx-auto">
           <div
-            className={`flex flex-wrap justify-center ${!noHeader && '-mt-6'}`}
+            className="flex flex-wrap justify-center"
+            style={{
+              marginTop: !noHeader ? '-1.5rem' : ''
+            }}
           >
             {children}
           </div>
