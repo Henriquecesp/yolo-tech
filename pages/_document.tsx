@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Inter&display=swap"
             rel="stylesheet"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

@@ -2,17 +2,31 @@ import { CourseStatus } from 'types/enums/CourseStatus'
 import { User } from 'types/user'
 
 export interface Course {
-  _id: string
+  id: string
   name: string
   description: string
   instructor: string
-  user: User
+  categoryList: []
   site: string
   price: number
   length: number
   slug: string
-  regDate: string
+  regDate: Date
   courseStatus: CourseStatus
   edited: boolean
   active: boolean
+  user?: User
+  avatar?: string
+}
+
+export type CoursesResponse = {
+  content: Course[]
+  pageable: {
+    sort: { sorted: boolean; unsorted: boolean; empty: boolean }
+    pageNumber: number
+    pageSize: number
+    offset: number
+    paged: boolean
+    unpaged: boolean
+  }
 }
