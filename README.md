@@ -4,7 +4,7 @@
 
 <p align="center">
   
-<img alt="Night Coding" src="https://raw.githubusercontent.com/henriquecesp/henriquecesp/main/assets/coffee.gif" />
+<img alt="Night Coding" src="https://github.com/Henriquecesp/yolo-tech/blob/main/public/favicon.ico" />
 </p>
 
 <p align="center">
