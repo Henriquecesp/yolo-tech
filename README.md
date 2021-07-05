@@ -1,4 +1,4 @@
-<h2 align="center">Nextjs + TailwindCSS - CespDev</h2>
+<h2 align="center">Yolo Tech</h2>
 
 ---
 
@@ -16,32 +16,33 @@
 ---
 
 <h3 align="center">
-  <a href="#information_source-sobre">About</a>&nbsp;|&nbsp;
-  <a href="#interrobang-motivo">Reason</a>&nbsp;|&nbsp;
-  <a href="#seedling-requisitos-mínimos">Requirements</a>&nbsp;|&nbsp;
-  <a href="#rocket-tecnologias-utilizadas">Techs</a>&nbsp;|&nbsp;
+  <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
+  <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
+  <a href="#seedling-requisitos">Requisitos</a>&nbsp;|&nbsp;
+  <a href="#rocket-tecnologias">Techs</a>&nbsp;|&nbsp;
   <a href="#link-como-contribuir">How to Contribute</a>&nbsp;|&nbsp;
-  <a href="#licença">License</a>
+  <a href="#license">License</a>
 </h3>
 
 ---
 
-<img src="https://repository-images.githubusercontent.com/351928175/34e58000-8e6c-11eb-91fb-394c7bfefd7d" width="1200">
+<img src="https://repository-images.githubusercontent.com/366193902/8a192200-ddc9-11eb-9be9-4f1a902e406e" width="1200">
 
-## :information_source: About
+## :information_source: Sobre
 
-Initial template for fast and agile development when working
-with NextJs.
+Plataforma de avaliações de cursos
 
-## :interrobang: Reason
+## :interrobang: Motivo
 
-For fast and agile development when starting a new project with NextJs
+Apoiar a decisão de escolha de cursos de tecnologia de iniciantes
+Ser uma referência na avaliação e revisão de conteúdos e cursos na área da tecnologia
+Difundir e ajudar a promover conteúdos de qualidade na área
 
-## :seedling: Requirements
+## :seedling: Requisitos
 
 Node
 
-## :rocket: Techs
+## :rocket: Tecnologias
 
 The project was developed using the following technologies
 
@@ -53,7 +54,7 @@ The project was developed using the following technologies
 - Husky
 - Jest
 
-## :link: How to Contribute
+## :link: Como contribuir
 
 - Fork
 - Create a branch with your feature
