@@ -14,7 +14,7 @@ const CourseSection = ({ course }: CourseSectionProps): JSX.Element => {
         className="h-full bg-white px-8 pt-8 pb-12 rounded-lg overflow-hidden relative text-black-500"
         style={{ border: '1px solid #E6E6F0' }}
       >
-        <Link href={`/users/${course.user?.username}`}>
+        <Link href={`/u/${course.instructor}`}>
           <div className="inline-flex items-center mb-8 cursor-pointer">
             {course.avatar ? (
               <img

@@ -12,10 +12,10 @@ const Course = ({ course }: CourseProps) => {
   return (
     <>
       <Head>
-        <title>Yolo Tech - {course.name}</title>
+        <title>Yolo Tech - {course?.name}</title>
       </Head>
-      <Layout title={course.name}>
-        <CourseSection course={course} />
+      <Layout title={course?.name}>
+        {course && <CourseSection course={course} />}
       </Layout>
     </>
   )

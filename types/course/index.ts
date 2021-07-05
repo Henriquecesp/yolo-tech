@@ -1,4 +1,3 @@
-import { CourseStatus } from 'types/enums/CourseStatus'
 import { User } from 'types/user'
 
 export interface Course {
@@ -12,10 +11,8 @@ export interface Course {
   length: number
   slug: string
   regDate: Date
-  courseStatus: CourseStatus
   edited: boolean
   active: boolean
-  user?: User
   avatar?: string
 }
 

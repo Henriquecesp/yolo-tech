@@ -11,7 +11,7 @@ interface UserAuth {
 
 const UserContext = createContext<UserAuth>({} as UserAuth)
 
-export function UserProvider({ children }) {
+export function UserProvider({ children }): JSX.Element {
   const [user, setUser] = useState<User>({} as User)
   const [logged, setLogged] = useState<boolean>(false)
   const [called, setCalled] = useState<boolean>(false)
