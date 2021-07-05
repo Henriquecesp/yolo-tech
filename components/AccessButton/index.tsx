@@ -18,7 +18,7 @@ export const AccessButton = (): JSX.Element => {
     )
   } else {
     return (
-      <>
+      <div className="flex flex-col">
         <Link href="cadastrar">
           <button className="inline-flex items-center text-white px-16 py-6 bg-yellow-500 border-0 focus:outline-none hover:bg-yellow-600 opacity-40 hover:opacity-100 rounded-lg text-lg">
             <IoEnterOutline className="text-3xl mr-3" />
@@ -30,7 +30,7 @@ export const AccessButton = (): JSX.Element => {
             Ja possui uma conta ? Acesse
           </span>
         </Link>
-      </>
+      </div>
     )
   }
 }
