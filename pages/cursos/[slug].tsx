@@ -8,14 +8,16 @@ interface CourseProps {
   course: CourseType
 }
 
-const Course = ({ course }: CourseProps) => {
+const Course = ({ course }: CourseProps): JSX.Element => {
   return (
     <>
       <Head>
         <title>Yolo Tech - {course?.name}</title>
       </Head>
       <Layout title={course?.name}>
-        {course && <CourseSection course={course} />}
+        <>
+          {course && <CourseSection course={course} />}
+        </>
       </Layout>
     </>
   )

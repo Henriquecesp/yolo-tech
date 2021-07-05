@@ -9,9 +9,13 @@ interface UserAuth {
   called: boolean
 }
 
+interface Props {
+  children: React.ReactNode
+}
+
 const UserContext = createContext<UserAuth>({} as UserAuth)
 
-export function UserProvider({ children }): JSX.Element {
+export function UserProvider({ children }: Props): JSX.Element {
   const [user, setUser] = useState<User>({} as User)
   const [logged, setLogged] = useState<boolean>(false)
   const [called, setCalled] = useState<boolean>(false)
@@ -22,6 +26,8 @@ export function UserProvider({ children }): JSX.Element {
         setLogged(true)
         setCalled(true)
         return setUser(data)
+      }).catch(() => {
+        localStorage.removeItem('auth')
       })
     }
     if (typeof window !== 'undefined') {

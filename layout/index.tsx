@@ -8,7 +8,7 @@ interface LayoutProps {
   description?: JSX.Element | string
 }
 
-const Layout = ({ children, noHeader, title, description }: LayoutProps) => {
+const Layout = ({ children, noHeader, title, description }: LayoutProps): JSX.Element => {
   return (
     <div className="min-w-screen min-h-screen bg-blue-50">
       <div className="text-gray-400 body-font overflow-hidden">

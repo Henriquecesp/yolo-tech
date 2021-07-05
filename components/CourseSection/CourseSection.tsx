@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Course } from 'types/course'
 import { HiOutlineBookOpen, HiOutlineExternalLink } from 'react-icons/hi'
+import { ReviewSection } from 'components/CourseSection/ReviewSection'
+import { Review } from 'components/CourseSection/Review'
 
 interface CourseSectionProps {
   course: Course
@@ -9,9 +11,9 @@ interface CourseSectionProps {
 
 const CourseSection = ({ course }: CourseSectionProps): JSX.Element => {
   return (
-    <div className="p-4 max-w-2xl w-full">
+    <div className="p-4 max-w-2xl w-full flex-col flex">
       <div
-        className="h-full bg-white px-8 pt-8 pb-12 rounded-lg overflow-hidden relative text-black-500"
+        className="h-full bg-white px-8 pt-8 pb-12 mb-12 rounded-lg overflow-hidden relative text-black-500"
         style={{ border: '1px solid #E6E6F0' }}
       >
         <Link href={`/u/${course.instructor}`}>
@@ -51,6 +53,8 @@ const CourseSection = ({ course }: CourseSectionProps): JSX.Element => {
           </div>
         </div>
       </div>
+      <Review />
+      <ReviewSection />
     </div>
   )
 }
